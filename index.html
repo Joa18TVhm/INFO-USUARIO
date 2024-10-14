@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <form>
+            <label for="nombre"> Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="apellido"> Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+            <label for="DNI"> DNI:</label>
+            <input type="number" id="DNI" name="DNI">
+            <label for="telefono"> Teléfono:</label>
+            <input type="number" id="telefono" name="telefono">
+            <label for="correo"> Correo electrónico:</label>
+            <input type="text" id="correo" name="correo">
+            <label for="saldo"> Saldo:</label>
+            <input type="number" id="saldo" name="saldo">
+        </form>
+        <button onclick = "crearPersona()">REGISTRAR NUEVO USUARIO:</button>
+    </div>
+    <div>
+        <h3> Nombre: <span id="n"></span></h3>
+        <h3> Apellido: <span id="a"></span></h3>
+        <h3> DNI: <span id="D"></span></h3>
+        <h3> Teléfono: <span id="t"></span></h3>
+        <h3> Correo Electrónico: <span id="c"></span></h3>
+        <h3> Saldo: <span id="s"></span></h3>
+    </div>
+
+    <button onclick = "anteriorPersona()">Anterior persona</button>
+    <button onclick = "siguientePersona()">Siguiente persona</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
